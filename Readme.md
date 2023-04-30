@@ -4,9 +4,7 @@ Extract CloudFormation stacks dependencies based on stack's exports and imports 
 
 **Sample Output**
 
-Above command will create json file in the working directory with these naming convention:
-  -  `cfn-dependency.json` when stack prefix is provided
-  - `global-cfn-dependency.json` when stack prefix is empty
+Above command will create `cfn-dependency.json` json file in the working directory with the export and import 
 
 ```json
 {
@@ -58,6 +56,13 @@ Above command will create json file in the working directory with these naming c
 }
 ```
 
+**Installation**
+Binary is available for Linux, Windows and Mac OS (amd64 and arm64). Download the binary for your respective platform from the releases page.
+
+Using go cli
+```shell
+go install github.com/rbalman/cfn-compose@latest
+```
 
 **Syntax**
 ```
